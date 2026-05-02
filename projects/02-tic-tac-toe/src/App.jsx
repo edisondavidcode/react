@@ -31,7 +31,7 @@ function App() {
     const newTurn = turn == TURNS.X ? TURNS.O : TURNS.X;
 
     window.localStorage.setItem("board", JSON.stringify(newBoard));
-    window.localStorage.setItem("turn", turn);
+    window.localStorage.setItem("turn", newTurn);
 
     if (newBoard[index] !== null || winner) return;
 
